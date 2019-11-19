@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+    CADASTRO
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card color="blank">
+  <div class="ion-padding">
+
+
+    <ion-label position="floating">R.A DO ALUNO:</ion-label>
+  <ion-input type="text" [(ngModel)]="cadastro.ra" placeholder="Insira o R.A do aluno"></ion-input>
+
+      <ion-label position="floating">EMAIL:</ion-label>
+    <ion-input type="text" [(ngModel)]="cadastro.email" placeholder="Insira o seu EMAIL"></ion-input>
+
+      <ion-label position="floating">CPF RESPONSAVEL:</ion-label>
+    <ion-input type="text" [(ngModel)]="cadastro.cpf" placeholder="Insira o seu CPF"></ion-input>
+
+      <ion-label position="floating">Senha:</ion-label>
+    <ion-input type="password" [(ngModel)]="cadastro.senha" placeholder="Insira sua senha"></ion-input>
+
+
+  <ion-button  expand="block" color="danger" (click)="salvar()" > Cadastrar </ion-button>
+  <ion-button  expand="block" color="danger"  href="home" > VOLTAR </ion-button>
+
+
+</div>
+</ion-card>
+</ion-content>

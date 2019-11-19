@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      SOLICITAÇÃO
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button href="telainicial" color="success"> <ion-icon name="backspace" ></ion-icon> </ion-button>
+
+  <ion-img src="../assets/icon/logo.png"></ion-img>
+
+  <ion-card color="success">
+    <div class="ion-padding">
+
+      <ion-label position="floating">R.A:</ion-label>
+    <ion-input type="text" [(ngModel)]="solicitar.ra" placeholder="Numero de Matricula"></ion-input>
+
+        <ion-label position="floating">CPF RESPONSAVEL:</ion-label>
+      <ion-input type="text"  [(ngModel)]="solicitar.cpf" placeholder="Insira o seu CPF"></ion-input>
+
+        <ion-label position="floating">DATA:</ion-label>
+      <ion-input type="text"  [(ngModel)]="solicitar.data" placeholder="Insira a data de saída"></ion-input>
+
+      <ion-label position="floating">HORARIO:</ion-label>
+    <ion-input type="text"  [(ngModel)]="solicitar.horario" placeholder="Insira o horario de saída"></ion-input>
+
+        <ion-label position="floating">MOTIVO:</ion-label>
+      <ion-input type="text" [(ngModel)]="solicitar.motivo " placeholder="Motivo"></ion-input>
+
+      <ion-label position="floating">RESPONSAVEL QUE IRÁ BUSCAR:</ion-label>
+    <ion-input type="text" [(ngModel)]="solicitar.responsavel" placeholder="Responsavel que irá buscar"></ion-input>
+
+    </div>
+  </ion-card>
+  <ion-button color="success" (click)="salvar()" href="telainicial">ENVIAR</ion-button>
+
+
+</ion-content>
